@@ -1,14 +1,11 @@
 <!doctype html>
 <html lang="en">
-  <head>
+   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
     <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://kit.fontawesome.com/5a233e8de7.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/5a233e8de7.js" crossorigin="anonymous"></script>
     <script defer src="index.js"></script>
   </head>
 
@@ -22,13 +19,13 @@
             <li><a href="#" class="nav__link">Contact</a></li>
             <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
           </ul>
-        </div>
+        
 
-        <button class="btn__menu">
+        <button class="btn__menu" onclick="openMenu()">
           <i class="fas fa-bars"></i>
         </button>
         <div class="menu__backdrop">
-          <button class="btn__menu btn__menu--close">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
             <i class="fas fa-times"></i>
           </button>
           <ul class="menu__links">
@@ -42,6 +39,7 @@
               <a class="menu__link no-cursor">Contacts</a>
             </li>
           </ul>
+        </div>
         </div>
       </nav>
 
